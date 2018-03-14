@@ -3,8 +3,8 @@ module.exports = {
   devtool: '#eval',
   watch: false,
 
-  entry:  './src/js/*.js',
-
+  entry: { app: './src/js/index.js' },
+  mode: 'development',
   module: {
     rules: [
       {
@@ -19,7 +19,7 @@ module.exports = {
       }
     ]
   },
-  
+
 
   output: {
     filename: "[name].bundled.js",

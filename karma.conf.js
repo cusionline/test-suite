@@ -1,7 +1,7 @@
 // Karma configuration
 // Generated on Wed Mar 14 2018 15:47:26 GMT+0100 (CET)
 
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -10,7 +10,11 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha', 'chai'],
+    frameworks: ['karma-mocha'],
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-mocha'
+    ],
 
 
     // list of files / patterns to load in the browser
@@ -18,7 +22,6 @@ module.exports = function(config) {
       './build/**/*.js',
       './test/**/*.js'
     ],
-
 
     // list of files / patterns to exclude
     exclude: [
