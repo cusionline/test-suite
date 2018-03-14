@@ -1,2 +1,3 @@
 # test-suite-example
 test suite karma chai mocha
+Need some help to run karma with mocha and chai and run the included test...
