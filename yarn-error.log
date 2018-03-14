@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/andreacusini/.nvm/versions/node/v9.2.1/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js a karma-chrome-launcher --save-dev
+  /Users/andreacusini/.nvm/versions/node/v9.2.1/bin/node /usr/local/Cellar/yarn/1.5.1/libexec/bin/yarn.js add spec-reporter --save-dev
 
 PATH: 
   /Users/andreacusini/.nvm/versions/node/v9.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -28,7 +28,6 @@ npm manifest:
       "chai": "^4.1.2",
       "global": "^4.3.2",
       "gulp": "^3.9.1",
-      "mocha": "^5.0.4",
       "karma": "2.0.0",
       "karma-chai": "^0.1.0",
       "karma-chrome-launcher": "^2.2.0",
@@ -40,11 +39,15 @@ npm manifest:
       "karma-phantomjs-launcher": "^1.0.4",
       "karma-safari-launcher": "^1.0.0",
       "karma-spec-reporter": "^0.0.32",
+      "mocha": "^5.0.4",
       "phantomjs": "^2.1.7",
       "webpack": "^4.1.1",
       "webpack-cli": "^2.0.12",
       "webpack-init": "^0.1.2",
       "webpack-stream": "^4.0.2"
+    },
+    "scripts": {
+      "test": "karma run"
     }
   }
 
@@ -7791,14 +7794,11 @@ Lockfile:
       yeoman-environment "^2.0.5"
 
 Trace: 
-  Error: Command "a" not found.
+  Error: Couldn't find package "spec-reporter" on the "npm" registry.
       at new MessageError (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:186:110)
-      at /usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:87307:17
+      at NpmResolver.<anonymous> (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:51625:15)
       at Generator.next (<anonymous>)
       at step (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:98:30)
-      at /usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:116:14
-      at new Promise (<anonymous>)
-      at new F (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:23451:28)
-      at /usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:95:12
-      at runCommand (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:87312:22)
-      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:87412:14)
+      at /usr/local/Cellar/yarn/1.5.1/libexec/lib/cli.js:109:13
+      at <anonymous>
+      at process._tickCallback (internal/process/next_tick.js:188:7)

@@ -10,10 +10,13 @@ module.exports = function (config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['karma-mocha'],
+    frameworks: ['chai', 'mocha'],
+
     plugins: [
       'karma-phantomjs-launcher',
-      'karma-mocha'
+      'karma-mocha',
+      'karma-chai',
+      'karma-spec-reporter'
     ],
 
 
@@ -37,7 +40,7 @@ module.exports = function (config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['spec'],
 
 
     // web server port

@@ -29,5 +29,8 @@
     "webpack-cli": "^2.0.12",
     "webpack-init": "^0.1.2",
     "webpack-stream": "^4.0.2"
+  },
+  "scripts": {
+    "test": "karma run"
   }
 }
