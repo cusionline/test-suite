@@ -1,2 +1,2 @@
-# test-suite
+# test-suite-example
 test suite karma chai mocha
